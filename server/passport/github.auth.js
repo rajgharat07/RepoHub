@@ -18,7 +18,7 @@ passport.use(
     {
       clientID: process.env.GITHUB_CLIENT_ID,
       clientSecret: process.env.GITHUB_CLIENT_SECRET,
-      callbackURL: "http://localhost:5000/api/auth/repohub/callback",
+      callbackURL: "https://repohub-wxec.onrender.com/api/auth/repohub/callback",
     },
     async function (accessToken, refreshToken, profile, done) {
       console.log(profile);
